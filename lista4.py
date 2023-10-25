@@ -54,9 +54,17 @@ def q03():
 
 #4. Faça um programa que armazene 8 números em uma lista e imprima todos os
 #números. Ao final, imprima o total de números múltiplos de seis.
+def q04():
+    lista = []
+    
+    for x in range(8):
+        lista.append(random.randrange(10))
+    cont = 0
+    for numero in lista:
+        print(f'{cont}: {numero}\t{"multiplo de 6" if numero%6==0 else "não é ultiplo de 6"}') 
 
   
-
+q04()
 #5. Faça um programa que armazene as notas das provas 1 e 2 de 15 alunos. Calcule
 #e armazene a média arredondada. Armazene também a situação do aluno: 1-
 #Aprovado ou 2-Reprovado. Ao final o programa deve imprimir uma listagem
