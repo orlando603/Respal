@@ -7,7 +7,28 @@ Lista de Exercícios referentes a coleções em python
 #permita que o usuário digite um número inteiro para ser buscado na lista, se
 #for encontrado o programa deve imprimir a posição desse número na lista, caso
 #contrário, deve imprimir a mensagem: "Nao encontrado!".
+def q01():
+    lista = []
+    for x in range(15):
+        lista.append(random.randrange(100))
+    print(lista)
+    num = 0
+    erro = True
+    while erro == True:
+        try:
+            num = int(input('Digite um número a ser buscado: '))
+            erro = False
+        except:
+            print('Informe um valor válido para inteiro!')
+            erro = True
+    try:
+        print(f'Valor encontrado na posição: {lista.index(num)}')
+    except ValueError:
+        print('Valor não encontrado na lista')
+    except:
+        print('Erro desconhecido, contate o administrador do sistema!')
 
+q01()
 #2. Faça um programa que armazene 10 letras em uma lista e imprima uma listagem
 #numerada.
 
