@@ -64,7 +64,7 @@ def q04():
         print(f'{cont}: {numero}\t{"multiplo de 6" if numero%6==0 else "não é ultiplo de 6"}') 
 
   
-q04()
+
 #5. Faça um programa que armazene as notas das provas 1 e 2 de 15 alunos. Calcule
 #e armazene a média arredondada. Armazene também a situação do aluno: 1-
 #Aprovado ou 2-Reprovado. Ao final o programa deve imprimir uma listagem
@@ -91,13 +91,24 @@ def q05():
 #e armazenar o novo salário sabendo-se que o reajuste foi de 8%. Imprimir uma
 #listagem numerada com o salário e o novo salário. Declare quantas listas forem
 #necessárias.
-
+salario = []
+reajuste = []
+nv_salario = []
+for x in  range(20):
+    salario.append(random.randrange(1000, 5000))
+    reajuste.append((salario[x]*8)/100)
+    nv_salario.append((salario[x]+reajuste[x]))
+print('SAL\tREAJ\tNVSAL')
+for x in range(20):
+    print(f"{salario[x]}\t{reajuste[x]}\t{nv_salario[x]}")   
 #7. Crie umprograma que leia o preço de compra e o preço de venda de 100 mercadorias
 #(utilize listas). Ao final, o programa deverá imprimir quantas mercadorias
 #proporcionam:
 #• lucro < 10%
 #• 10% <= lucro <= 20%
 #• lucro > 20%
+
+
 
 #8. Construa um programa que armazene o código, a quantidade, o valor de compra
 #e o valor de venda de 30 produtos. A listagem pode ser de todos os produtos ou
