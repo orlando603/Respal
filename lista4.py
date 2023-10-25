@@ -28,10 +28,13 @@ def q01():
     except:
         print('Erro desconhecido, contate o administrador do sistema!')
 
-q01()
+
 #2. Faça um programa que armazene 10 letras em uma lista e imprima uma listagem
 #numerada.
+def q02():
+    print('teste q02')
 
+q02()
 #3. Construa uma programa que armazene 15 números em uma lista e imprima
 #uma listagem numerada contendo o número e uma das mensagens: par ou ímpar.
 
