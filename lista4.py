@@ -50,16 +50,34 @@ def q03():
     for numero in lista:
         print(f'{cont}: {numero}\t{"PAR" if numero%2==0 else "IMPAR"}')
 
-q03()
+
 
 #4. Faça um programa que armazene 8 números em uma lista e imprima todos os
 #números. Ao final, imprima o total de números múltiplos de seis.
+
+  
 
 #5. Faça um programa que armazene as notas das provas 1 e 2 de 15 alunos. Calcule
 #e armazene a média arredondada. Armazene também a situação do aluno: 1-
 #Aprovado ou 2-Reprovado. Ao final o programa deve imprimir uma listagem
 #contendo as notas, a média e a situação de cada aluno em formato tabulado.
 #Utilize quantas listas forem necessárias para armazenar os dados.
+def q05():
+    notas1 = []
+    notas2 = []
+    medias = []
+    situacoes = []
+    for c in range(15):
+        notas1.append(random.randrange(0,11))
+        notas2.append(random.randrange(0,11))
+        medias.append((notas1[c] + notas2[c])/2)
+        if medias[c] >= 6:
+            situacoes.append('APROVADO')
+        else:
+            situacoes.append('REPROVADO')
+    print('N1\tN2\tMED\tSITUACAO')
+    for c in range(15):
+        print(f'{notas1[c]}\t{notas2[c]}\t{medias[c]}\t{situacoes[c]}')
 
 #6. Construa um programa que permita armazenar o salário de 20 pessoas. Calcular
 #e armazenar o novo salário sabendo-se que o reajuste foi de 8%. Imprimir uma
