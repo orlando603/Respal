@@ -39,13 +39,18 @@ def q02():
     for letra in lista:
         print(f'{cont}: {letra}')
         cont+=1
-q02()
+
 #3. Construa uma programa que armazene 15 números em uma lista e imprima
 #uma listagem numerada contendo o número e uma das mensagens: par ou ímpar.
 def q03():
-    print('orlando')
+    lista = []
+    for x in range(15):
+        lista.append(random.randrange(100))
+    cont = 0
+    for numero in lista:
+        print(f'{cont}: {numero}\t{"PAR" if numero%2==0 else "IMPAR"}')
 
-
+q03()
 
 #4. Faça um programa que armazene 8 números em uma lista e imprima todos os
 #números. Ao final, imprima o total de números múltiplos de seis.
