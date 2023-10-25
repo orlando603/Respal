@@ -107,6 +107,14 @@ for x in range(20):
 #• lucro < 10%
 #• 10% <= lucro <= 20%
 #• lucro > 20%
+preço_c = []
+preço_v = []
+lucro = []
+for x in range(10):
+    preço_c.append(random.randrange(100, 500))
+    preço_v.append(random.randrange())
+    lucro.append((preço_v[x]-preço_c[x])
+if lucro < (x)    
 
 
 
