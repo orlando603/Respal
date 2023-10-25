@@ -34,9 +34,12 @@ def q01():
 def q02():
     print('teste q02')
 
-q02()
 #3. Construa uma programa que armazene 15 números em uma lista e imprima
 #uma listagem numerada contendo o número e uma das mensagens: par ou ímpar.
+def q03():
+    print('orlando')
+
+q03()
 
 #4. Faça um programa que armazene 8 números em uma lista e imprima todos os
 #números. Ao final, imprima o total de números múltiplos de seis.
