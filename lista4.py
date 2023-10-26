@@ -91,32 +91,42 @@ def q05():
 #e armazenar o novo salário sabendo-se que o reajuste foi de 8%. Imprimir uma
 #listagem numerada com o salário e o novo salário. Declare quantas listas forem
 #necessárias.
-salario = []
-reajuste = []
-nv_salario = []
-for x in  range(20):
-    salario.append(random.randrange(1000, 5000))
-    reajuste.append((salario[x]*8)/100)
-    nv_salario.append((salario[x]+reajuste[x]))
-print('SAL\tREAJ\tNVSAL')
-for x in range(20):
-    print(f"{salario[x]}\t{reajuste[x]}\t{nv_salario[x]}")   
+def q06():
+    salario = []
+    reajuste = []
+    nv_salario = []
+    for x in  range(20):
+        salario.append(random.randrange(1000, 5000))
+        reajuste.append((salario[x]*8)/100)
+        nv_salario.append((salario[x]+reajuste[x]))
+    print('SAL\tREAJ\tNVSAL')
+    for x in range(20):
+        print(f"{salario[x]}\t{reajuste[x]}\t{nv_salario[x]}")   
 #7. Crie umprograma que leia o preço de compra e o preço de venda de 100 mercadorias
 #(utilize listas). Ao final, o programa deverá imprimir quantas mercadorias
 #proporcionam:
 #• lucro < 10%
 #• 10% <= lucro <= 20%
 #• lucro > 20%
-preço_c = []
-preço_v = []
-lucro = []
-for x in range(10):
-    preço_c.append(random.randrange(100, 500))
-    preço_v.append(random.randrange())
-    lucro.append((preço_v[x]-preço_c[x])
-if lucro < (x)    
+def q07():
+    preço_c = []
+    preço_v = []
+    lucro = []
+    for x in range(10):
+        preço_c.append(float(random.randrange(100, 500)))
+        preço_v.append(float(random.randrange(100, 1000)))
+        lucro.append(preço_v[x]-preço_c[x])
+        if lucro[x] < (lucro[x]*10)/100:
+            print (f"{lucro[x]} < 10%")
+        elif lucro[x] >=  (lucro[x]*10)/100 and lucro[x] <= (lucro[x]*20)/100: 
+            print(f'10% <= {lucro[x]} <= 20%') 
+        else:
+            print(f'{lucro[x]} > 20%')     
+    print('P_C\tP_V\tLUCRO')
+    for x in range(10):
+        print(f"{preço_c[x]}\t{preço_v[x]}\t{lucro[x]}")
 
-
+q07()
 
 #8. Construa um programa que armazene o código, a quantidade, o valor de compra
 #e o valor de venda de 30 produtos. A listagem pode ser de todos os produtos ou
