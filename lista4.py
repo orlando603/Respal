@@ -126,12 +126,46 @@ def q07():
     for x in range(10):
         print(f"{preço_c[x]}\t{preço_v[x]}\t{lucro[x]}")
 
-q07()
+
 
 #8. Construa um programa que armazene o código, a quantidade, o valor de compra
 #e o valor de venda de 30 produtos. A listagem pode ser de todos os produtos ou
 #somente de um ao se digitar o código. Utilize dicionário como estrutura de dados.
-    
+def q08():
+    estoque = {
+        'cod ':'12' , 'quant' : '2', 'valor_c' : '35' , 'valor_v' : '70' , 'produto':'ferro'
+        'cod ':'21' , 'quant' : '3', 'valor_c' : '40' , 'valor_v' : '80', 'produto':'aluminio'
+        'cod ' : '13' , 'quant' : '4', 'valor_c' : '50.25' , 'valor_v' : '100.5', 'produto':'barras'
+        'cod ' : '31' , 'quant' : '5', 'valor_c' : '20' , 'valor_v' : '6.75', 'produto':'cimento'
+        'cod ' : '14' , 'quant' : '1', 'valor_c' : '30' , 'valor_v' : '70.65', 'produto':'manilha'
+        'cod ' : '41' , 'quant' : '3', 'valor_c' : '1.50' , 'valor_v' : '7.50', 'produto':'ferro1'
+        'cod ' : '15' , 'quant' : '7', 'valor_c' : '20' , 'valor_v' : '85.50', 'produto':'ferro2'
+        'cod ' : '51' , 'quant' : '8', 'valor_c' : '5' , 'valor_v' : '120', 'produto':'ferro3'
+        'cod ' : '16' , 'quant' : '9', 'valor_c' : '2.5' , 'valor_v' : '35', 'produto':'ferro4'
+        'cod ' : '61' , 'quant' : '10', 'valor_c' : '0.5' , 'valor_v' : '45', 'produto':'ferro5'
+        'cod ' : '17' , 'quant' : '2', 'valor_c' : '10' , 'valor_v' : '98', 'produto':'ferro6'
+        'cod ' : '71' , 'quant' : '3', 'valor_c' : '20' , 'valor_v' : '65', 'produto':'ferro7'
+        'cod ' : '18' , 'quant' : '5', 'valor_c' : '25' , 'valor_v' : '72.50', 'produto':'ferro8'
+        'cod ' : '81' , 'quant' : '7', 'valor_c' : '60' , 'valor_v' : '36', 'produto':'ferro9'
+        'cod ' : '19' , 'quant' : '8', 'valor_c' : '80' , 'valor_v' : '15.50', 'produto':'ferro10'
+        'cod ' : '91' , 'quant' : '2', 'valor_c' : '1' , 'valor_v' : '12', 'produto':'estrutura1'
+        'cod ' : '23' , 'quant' : '9', 'valor_c' : '0.75' , 'valor_v' : '10', 'produto':'estrutura1'
+        'cod ' : '32' , 'quant' : '2', 'valor_c' : '50' , 'valor_v' : '150', 'produto':'estrutura2'
+        'cod ' : '24' , 'quant' : '3', 'valor_c' : '30' , 'valor_v' : '60', 'produto':'estrutura3'
+        'cod ' : '42' , 'quant' : '2', 'valor_c' : '65' , 'valor_v' : '30', 'produto':'estrutura4'
+        'cod ' : '25' , 'quant' : '4', 'valor_c' : '2' , 'valor_v' : '20', 'produto':'estrutura5'
+        'cod ' : '52' , 'quant' : '2', 'valor_c' : '30' , 'valor_v' : '160', 'produto':'estrutura6'
+        'cod ' : '26' , 'quant' : '1', 'valor_c' : '150' , 'valor_v' : '500', 'produto':'estrutura7'
+        'cod ' : '62' , 'quant' : '2', 'valor_c' : '25' , 'valor_v' : '70', 'produto':'estrutura8'
+        'cod ' : '27' , 'quant' : '9', 'valor_c' : '100' , 'valor_v' : '250', 'produto':'estrutura9'
+        'cod ' : '72' , 'quant' : '1', 'valor_c' : '36' , 'valor_v' : '65', 'produto':'estrutura10'
+        'cod ' : '28' , 'quant' : '2', 'valor_c' : '25' , 'valor_v' : '95', 'produto':'estrutura1.1'
+        'cod ' : '82' , 'quant' : '3', 'valor_c' : '21' , 'valor_v' : '85', 'produto':'estrutura1.2'
+        'cod ' : '29' , 'quant' : '4', 'valor_c' : '20' , 'valor_v' : '45', 'produto':'estrutura1.3'
+        'cod ' : '92' , 'quant' : '5', 'valor_c' : '9' , 'valor_v' : '650', 'produto':'estrutura1.4'
+    }
+    print(estoque)
+q08() 
 #9. Faça um programa que leia dois conjuntos de números inteiros, tendo
 #cada um 10 elementos. Ao final o programa deve listar os elementos comuns aos
 #conjuntos.
